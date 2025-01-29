@@ -271,7 +271,17 @@ AOS.init({
 })(jQuery);
 
 const myTags = [
-	'Laravel', 'Angular', 'PHP', 'Node.JS', 'ReactJS', 'CosmosDB', 'Neo4j', 'POO', 'Rest-APIs', 'JavaScript', 'Ajax', 'Slim 3', 'VueJS', 'Flutter', 'Android', 'React Native', 'Java', 'JEE', 'Soap', 'MySQL', '.Net', 'Linux', 'Python', 'MongoDB', 'C#', 'UML', 'Scrum', 'DevOps', 'Bootstrap', 'HTML5', 'CSS3', 'scss', 'Adobe Ps', 'Adobe Pr', 'Adobe illustrator', 'Adobe Lightroom', 'Adobe ID', 'WordPress', 'Git', 'NodeRed', 'UX', 'Jira', 'MVC', 'Azure Functions', 'SpringBoot'
+	'Java', 'PHP',
+	'Html5', 'Css3', 'JavaScript', 'J2EE', 'Ajax', 'JQuery',
+	'Kotlin', 'VueJS', 'Python', 'Dart', 'React', 'Laravel', 'Android', 'Odoo',
+	'Bootstrap', 'Angular', 'Rest-APIs', 'Rétrofit', 'Okhttp', 'MySql', 'Sql', 'Sqlite',
+	'Scrm', 'Jira', 'Git', 'UML',
+	'IA&DL', 'Linux', 'Virtualisation',
+	'IOT', 'Cloud Computing', 'Audit', 'SIG',
+	'Esprit d\'équipe fort', 'Dynamisme',
+	'Créativité', 'Adaptabilité aux changements',
+	'Ponctualité'
+
 ];
 
 var tagCloud = TagCloud('.content', myTags, {
