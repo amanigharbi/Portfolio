@@ -13697,3 +13697,28 @@ textarea.form-control {
       max-height: 250px;
   }
 }
+/* Style pour le message sous le bouton */
+.alert-message {
+  display: none; /* Cache le message par défaut */
+  margin-top: 10px; /* Ajoute un peu d'espace au-dessus */
+  font-size: 16px;
+  color: #721c24; /* Texte en rouge pour les erreurs */
+  background-color: #f8d7da; /* Fond rouge clair pour une erreur */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.alert-message.success {
+  background-color: #d4edda; /* Fond vert clair pour un succès */
+  color: #155724; /* Texte vert pour succès */
+}
+
+.alert-message.error {
+  background-color: #f8d7da; /* Fond rouge clair pour une erreur */
+  color: #721c24; /* Texte rouge pour une erreur */
+}.github-icon {
+  font-size: 40px; /* Ajuste la taille pour correspondre aux autres icônes */
+  color: #961ea9; /* Violet comme les autres icônes */
+}
+
+

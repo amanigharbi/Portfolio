@@ -22,9 +22,12 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	
 
 </head>
 
@@ -900,49 +903,86 @@
 
 				</div>
 			</div>
+			<div class="row d-flex contact-info">
+				<!-- Colonne gauche : Lettre de contact -->
+				<div class="col-md-6 d-flex flex-column ftco-animate">
+					<div class="align-self-stretch box p-4 text-center" style="background: #f8f9fa; border-radius: 10px;">
+						<h3 class="mb-4" style="color: #961ea9;">Envoyez-moi un message</h3>
+						<!-- <form action="mailto:amanigharbi9@gmail.com" method="post" enctype="text/plain"> -->
+							<form id="contactForm">
 
-			<div class="row d-flex contact-info ">
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-linkedin"></span>
-						</div>
-						<h3 class="mb-4">Linkedin</h3>
-						<a href="https://www.linkedin.com/in/amani-gharbi/">
-							<p style="color: #961ea9;">Amani Gharbi</p>
-						</a>
+							<div class="mb-3">
+								<input type="text" class="form-control" name="Nom" placeholder="Nom" required>
+							</div>
+							<div class="mb-3">
+								<input type="text" class="form-control" name="Prénom" placeholder="Prénom" required>
+							</div>
+							<div class="mb-3">
+								<input type="email" class="form-control" name="Mail" placeholder="Mail" required>
+							</div>
+							<div class="mb-3">
+								<input type="text" class="form-control" name="Objet" placeholder="Objet" required>
+							</div>
+							<div class="mb-3">
+								<textarea class="form-control" name="Message" rows="4" placeholder="Votre Message" required></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary" style="background-color: #961ea9; border-color: #961ea9;">Envoyer</button>
+							<p id="alertMessage" class="alert-message"></p>
+
+						</form>
+
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-map-signs"></span>
+									
+				<!-- Colonne droite : Contacts -->
+				<div class="col-md-6 d-flex flex-column">
+					<div class="row">
+						<div class="col-md-6 d-flex ftco-animate">
+							<div class="align-self-stretch box p-4 text-center">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="icon-linkedin"></span>
+								</div>
+								<h3 class="mb-4">Linkedin</h3>
+								<a href="https://www.linkedin.com/in/amani-gharbi/" style="color: #961ea9;">Amani Gharbi</a>
+							</div>
 						</div>
-						<h3 class="mb-4">Adresse</h3>
-						<p style="color: #961ea9;">Aix en provence, France</p>
+						<div class="col-md-6 d-flex ftco-animate">
+							<div class="align-self-stretch box p-4 text-center">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<i class="fab fa-github github-icon"></i> 
+								</div>
+								<h3 class="mb-4">GitHub</h3>
+								<a href="https://github.com/amanigharbi" style="color: #961ea9;">Mon GitHub</a>
+							</div>
+						</div>
+						
+						
+					</div>
+					<div class="row">
+						<div class="col-md-6 d-flex ftco-animate">
+							<div class="align-self-stretch box p-4 text-center">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="icon-map-signs"></span>
+								</div>
+								<h3 class="mb-4">Adresse</h3>
+								<p style="color: #961ea9;">Aix en Provence, France</p>
+							</div>
+						</div>
+						<div class="col-md-6 d-flex ftco-animate">
+							<div class="align-self-stretch box p-4 text-center">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="icon-phone2"></span>
+								</div>
+								<h3 class="mb-4">Numéro de téléphone</h3>
+								<p><a href="tel://+33753644118" style="color: #961ea9;">+33 6 29 22 79 53</a></p>
+							</div>
+						</div>
+						
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-phone2"></span>
-						</div>
-						<h3 class="mb-4">Numéro de téléphone</h3>
-						<p><a href="tel://+33753644118" style="color: #961ea9;">+33 6 29 22 79 53</a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-paper-plane"></span>
-						</div>
-						<h3 class="mb-4">Email</h3>
-						<p><a href="mailto:amanigharbi9@gmail.com" style="color: #961ea9;">amanigharbi9@gmail.com</a>
-						</p>
-					</div>
-				</div>
-				>
 			</div>
+			
+			
 		</div>
 	</section>
 
@@ -969,6 +1009,46 @@
 				stroke="#F96D00" />
 		</svg></div>
 	
+		<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("1jVng-Brg_kZjEDCU"); 
+        })();
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let formData = {
+                Nom: this.Nom.value,
+                Prénom: this.Prénom.value,
+                Mail: this.Mail.value,
+                Objet: this.Objet.value,
+                Message: this.Message.value
+            };
+
+            emailjs.send("service_6eljsbd", "template_4e907u9", formData)
+                .then(response => {
+                    showAlert("Votre message a été envoyé avec succès !", "success");
+                    document.getElementById("contactForm").reset();
+                }, error => {
+                    showAlert("Erreur lors de l'envoi du message. Veuillez réessayer.", "error");
+                    console.log("Erreur:", error);
+                });
+        });
+
+		function showAlert(message, type) {
+    const alertMessage = document.getElementById('alertMessage');
+    alertMessage.textContent = message; 
+    alertMessage.className = 'alert-message ' + type; 
+    alertMessage.style.display = 'block';
+
+    // Cache le message après 4 secondes
+    setTimeout(function() {
+        alertMessage.style.display = 'none';
+    }, 6000); // Le message disparaît après 4 secondes
+}
+
+    </script>
 	<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
