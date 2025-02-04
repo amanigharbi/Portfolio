@@ -13735,10 +13735,35 @@ textarea.form-control {
   transform: translateY(-50%);
 }
 .owl-nav button {
-  background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(150, 30, 169, 70%) !important;
   color: white !important;
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
+
+
+.tag-cloud {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.tag {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  background-color: #961ea9;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.3s;
+}
+.tag:hover {
+  transform: scale(1.1);
+  background-color: #961ea9;
+}
+
 
