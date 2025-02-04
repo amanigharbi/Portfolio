@@ -13720,5 +13720,25 @@ textarea.form-control {
   font-size: 40px; /* Ajuste la taille pour correspondre aux autres icônes */
   color: #961ea9; /* Violet comme les autres icônes */
 }
-
+.one-third.js-fullheight {
+  height: 400px; /* Ajustez la hauteur selon vos besoins */
+  background-size: contain; /* L'image s'ajuste sans être coupée */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.owl-nav button {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
 
